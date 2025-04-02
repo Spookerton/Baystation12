@@ -262,7 +262,7 @@
 	icon = 'icons/map_project/fluff_items.dmi'
 	icon_state = "paper3"
 
-/obj/random/exploration/spawn_choices()
+/obj/random/randomchaos/spawn_choices()
 	return list(/mob/living/simple_animal/hostile/daemon/headcrab/infestor = 1,
 				/mob/living/simple_animal/hostile/daemon/minion = 1,
 				/mob/living/simple_animal/hostile/daemon/hulk = 1,
@@ -451,11 +451,11 @@
 				/obj/item/material/twohanded/ravenor/axe/spear/fuscina/adamantine = 1)
 
 /obj/random/loot/swordmelee // need to also make a sword only spawner without traditional melee. then a traditional melee spawner.
-	name = "Heavy Melee"
-	desc = "This is a weapon loot spawner with a high chance of spawning common heavy melee weapons."
-	icon_state = "heavymelee"
+	name = "Sword Melee"
+	desc = "This is a weapon loot spawner with a high chance of spawning sword melee weapons."
+	icon_state = "lightmelee"
 
-/obj/random/loot/heavymelee/spawn_choices()
+/obj/random/loot/swordmelee/spawn_choices()
 	return list(/obj/item/material/twohanded/ravenor/sword/chopper/heavy = 16,
 				/obj/item/material/twohanded/ravenor/sword/chopper/heavy/adamantine = 3,
 				/obj/item/material/twohanded/ravenor/sword/broadsword = 16,

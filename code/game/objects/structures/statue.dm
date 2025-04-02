@@ -609,18 +609,18 @@
 
 	var/obj/item/torch/lighttorch
 
-/obj/structure/torchwall/New()
-	..()
+/obj/structure/torchwall/Initialize()
+	. = ..()
 	if(prob(98))
 		lighttorch = new /obj/item/torch(src)
 		if(prob(75))
 			lighttorch.light(null, FALSE)
-	lighttorch.update_icon()
+		lighttorch.update_icon()
 	update_icon()
 
 /obj/structure/torchwall/Destroy()
 	QDEL_NULL(lighttorch)
-	. = ..()
+	return ..()
 
 
 /obj/structure/torchwall/update_icon()
