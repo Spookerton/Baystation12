@@ -1027,7 +1027,6 @@ something, make sure it's not in one of the other lists.*/
 				/obj/random/tank = 20,
 				/obj/random/soap = 5,
 				/obj/random/drinkbottle = 5,
-				/obj/random/loot = 1,
 				/obj/random/advdevice = 50,
 				/obj/random/smokes = 30,
 				/obj/random/masks = 10,
@@ -1042,7 +1041,8 @@ something, make sure it's not in one of the other lists.*/
 				/obj/random/accessory = 20,
 				/obj/random/cash = 10)
 
-/obj/random/loot /*Better loot for away missions and salvage */
+/obj/random/loot
+	abstract_type = /obj/random/loot
 	name = "random loot"
 	desc = "This is some random loot."
 	icon = 'icons/effects/random_spawners.dmi'
