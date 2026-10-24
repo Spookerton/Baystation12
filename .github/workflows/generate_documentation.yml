@@ -1,7 +1,7 @@
 name: Generate Documentation
 
 env:
-  SPACEMAN_DMM_VERSION: suite-1.10
+  SPACEMAN_DMM_VERSION: "suite-1.12"
 
 permissions:
   contents: read
